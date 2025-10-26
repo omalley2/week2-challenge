@@ -1,0 +1,183 @@
+header {
+  padding: 40px;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  background: #13293d;
+  color: #fff;
+}
+
+body {
+  font-family: 'Times New Roman', Times, serif;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: flex-start;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  min-width: 300px;
+}
+
+nav a {
+  color: #b9c6ae;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.project-card {
+  padding: 24px;
+  border: 2px solid #bfbfbf;
+  background-color: #ffffff;
+  flex: 0 0 300px;
+}
+
+.project-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+.project-card:hover {
+    transform: rotate(16deg);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.project-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.project-card h3 {
+    color: #0066cc;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.project-card p {
+    margin-bottom: 16px;
+    color: #666;
+}
+
+section {
+  flex: 0 0 400px;
+  background-color: #fff;
+  padding: 20px;
+}
+
+/* Contact section spacing improvements */
+#contact {
+  padding: 40px 20px;
+}
+
+#contact h2 {
+  margin-bottom: 20px;
+}
+
+#contact form p {
+  margin-bottom: 15px;
+}
+
+#contact label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input,
+button,
+select,
+textarea {
+  width: 300px;
+  margin: 5px 0 15px 0;
+  padding: 8px;
+}
+
+button {
+  width: 120px;
+  margin-top: 20px;
+}
+
+/* When using `max-width` as the breakpoint, you must go from widest to narrowest to avoid conflict */
+
+/* Tablets - responsive layout adjustments */
+@media screen and (max-width: 992px) {
+  header {
+    background: #772014;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .project-container {
+    justify-content: center;
+  }
+  
+  .project-card {
+    flex: 0 0 45%;
+    max-width: 400px;
+  }
+}
+
+/* Large smartphones - mobile navigation and single column layout */
+@media screen and (max-width: 768px) {
+  nav {
+    background-color: #bb8588;
+  }
+  
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+    min-width: auto;
+  }
+  
+  .project-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .project-card {
+    flex: none;
+    width: 90%;
+    max-width: 500px;
+  }
+  
+  section {
+    flex: none;
+    width: 100%;
+  }
+}
+
+/* Small smartphones - optimize for small screens */
+@media screen and (max-width: 576px) {
+  header {
+    padding: 20px;
+  }
+  
+  header h1 {
+    font-size: 1.5rem;
+  }
+  
+  .project-card {
+    width: 95%;
+    padding: 15px;
+  }
+  
+  input,
+  select,
+  textarea {
+    width: 100%;
+    max-width: 280px;
+  }
+  
+  button {
+    width: 100px;
+  }
+  
+  #contact {
+    padding: 20px 10px;
+  }
+}

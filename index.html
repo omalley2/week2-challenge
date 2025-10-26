@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Joe O'Malley Portfolio</title>
+  <link rel="stylesheet" href="assets/css/reset.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+  <header>
+    <h1>Joe O'Malley Portfolio</h1>
+    <nav>
+      <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    </nav>  
+</header>
+
+  <main>
+    <section id ="about" >
+      <h2>About Me</h2>
+      <p>I'm a finance professional who enjoys the intersection of finance and technology. I'm excited to learn more about developing software in this class.</p>
+    </section>
+
+    <section id="projects">
+      <h2>Advanced Selectors</h2>
+      <div class="project-container">
+        <div class="project-card">
+            <img src="assets/images/san-francisco.jpg" alt="Project 1" />
+            <h3>Biking in San Francisco</h3>
+          <p>Marin headlands has some of the best hiking and biking trails in the US. I like going down Hawk Hill, which is where this photo is taken from!</p>
+        </div>
+        <div class="project-card">
+          <img src="assets/images/pearl-jam.jpg" alt="Project 2" />
+          <h3>Pearl Jam Concert</h3>
+          <p>Pearl Jam is the band I've seen most live. I was a big fan growing up and knew all of their songs</p>
+        </div>
+        <div class="project-card">
+          <img src="assets/images/kane.jpg" alt="Project 3" />
+          <h3>Hockey</h3>
+          <p>I still play hockey in a local SF league. It's a lot of fun but a lot of late nights!</p>
+        </div>
+      </div>
+    </section>
+    
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <p>It'd be great to hear from you. Please reach out!</p>
+      <form>
+        <p>
+        <label for="username">Name:</label>
+        <!-- This element has a CSS declaration of `cursor: text` -->
+        <input id="username" type="text" placeholder="First Last" />
+        </p>
+        <p>
+        <label  for="email">E-mail:</label>
+        <input id="email" type="text" placeholder="me@example.com" />
+        </p>
+        <p>
+        <label for="expertise">CSS level of expertise:</label>
+        <!-- This element has a CSS declaration of `appearance: menulist` -->
+        <select id="expertise">
+            <option>Beginner</option>
+            <option selected>Intermediate</option>
+            <option>Advanced</option>
+        </select>
+        </p>
+        <p>
+        <label for="comment">Comment:</label>
+        <textarea id="comment" placeholder="Great article!"></textarea>
+        </p>
+        <p>
+        <input class="checkbox" id="agreement" type="checkbox" />
+        <label for="agreement">I agree to share my e-mail address with Codecademy</label>
+        </p>
+        <p>
+        <!-- When this element is in a :focus state, the CSS `outline` property is applied -->
+        <button>Submit</button>
+        </p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Codecademy CSS Course</p>
+  </footer>
+</body>
+
+</html>
+<!-- Updated for GitHub Pages -->
